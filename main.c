@@ -1,24 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<conio.h>
 
 int main()
 {
     int i,j;
-    printf("The prime no. from 1 to 300 are:\n");
-    for(i=1;i<=300;i++)
+    float sum=0,fact=1.0,div;
+    for(i=1;i<=7;i++)
     {
-        for(j=2;j<i;j++)
-        {
-            if(i%j==0)
-            {
-
-                break;
-            }
-        }
-        if(j==i)
-        {
-            printf("%d \t",j);
-        }
+        fact=fact*i;
+        div=i/fact;
+        sum=sum+div;
     }
-    return 0;
+    printf("%f",sum);
+return 0;
+
 }
+
+
